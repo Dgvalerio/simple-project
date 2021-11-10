@@ -13,7 +13,8 @@
   },
   "plugins": [
     "@typescript-eslint",
-    "prettier"
+    "prettier",
+    "eslint-plugin-import-helpers"
   ],
   "rules": {
     "prettier/prettier": [
@@ -21,6 +22,25 @@
       {
         "singleQuote": true,
         "trailingComma": "es5"
+      }
+    ],
+    "import-helpers/order-imports": [
+      "warn",
+      {
+        "newlinesBetween": "always",
+        "groups": [
+          "module",
+          "/^@shared/",
+          [
+            "parent",
+            "sibling",
+            "index"
+          ]
+        ],
+        "alphabetize": {
+          "order": "asc",
+          "ignoreCase": true
+        }
       }
     ]
   }
