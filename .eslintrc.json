@@ -4,15 +4,24 @@
     "node": true
   },
   "extends": [
-    "google"
+    "google",
+    "prettier"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "sourceType": "module"
   },
   "plugins": [
-    "@typescript-eslint"
+    "@typescript-eslint",
+    "prettier"
   ],
   "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "trailingComma": "es5"
+      }
+    ]
   }
 }
