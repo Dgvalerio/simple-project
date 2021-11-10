@@ -1,0 +1,8 @@
+{
+  "name": "simple-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Dgvalerio/simple-project.git",
+  "author": "dgvalerio <al.davigvalerio@gmail.com>",
+  "license": "MIT"
+}
